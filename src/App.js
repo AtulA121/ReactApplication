@@ -1,23 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Welcome from "./withJSX/welcome";
+import WelcomeJSX from "./withoutJSX/welcome";
+import WelcomeClass from "./classComponent/welcome";
+import Parent from "./PassingMethodInProps/parent"
+import List from "./listComponenet/list";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Welcome userName="atul" />
+        <WelcomeJSX userName="pisal" />
+        <WelcomeClass userName="a121" />
+        <Parent></Parent>
+        <List></List>
       </header>
     </div>
   );
