@@ -26,6 +26,7 @@ import BBB from './useReducerWithuseContext/BBB';
 import CCC from './useReducerWithuseContext/CCC';
 import FetchData from './fetchDataWithuseReducer/fetchData';
 import FetchDataUsingUseReduce from './fetchDataWithuseReducer/fetchDataUsingUseReduce';
+import TableComp from './ReusableComponents/table';
 
 export const UserContext=React.createContext();
 export const NestedUserContext=React.createContext();
@@ -124,7 +125,10 @@ function App() {
         {/* <FetchData /> */}
 
         {/* fetchData with useReducer */}
-        <FetchDataUsingUseReduce />
+        {/* <FetchDataUsingUseReduce /> */}
+
+        {/* reusable component */}
+        <TableComp />
 
       </header>
     </div>
