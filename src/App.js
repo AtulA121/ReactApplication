@@ -24,6 +24,8 @@ import UseReducerWithObjectComp from './useReducerComponent/useReduceWithObject'
 import AAA from './useReducerWithuseContext/AAA';
 import BBB from './useReducerWithuseContext/BBB';
 import CCC from './useReducerWithuseContext/CCC';
+import FetchData from './fetchDataWithuseReducer/fetchData';
+import FetchDataUsingUseReduce from './fetchDataWithuseReducer/fetchDataUsingUseReduce';
 
 export const UserContext=React.createContext();
 export const NestedUserContext=React.createContext();
@@ -109,14 +111,20 @@ function App() {
         {/* <UseReducerWithObjectComp /> */}
 
         {/* useReducer With useContext */}
-        <CountContext.Provider value={{
+        {/* <CountContext.Provider value={{
             count : count, countDispatch : reduceCount}
           }>
             count : {count}
           <AAA />
           <BBB />
           <CCC />
-        </CountContext.Provider>
+        </CountContext.Provider> */}
+
+        {/* fetchData with useState */}
+        {/* <FetchData /> */}
+
+        {/* fetchData with useReducer */}
+        <FetchDataUsingUseReduce />
 
       </header>
     </div>
