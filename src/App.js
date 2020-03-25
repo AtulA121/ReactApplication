@@ -15,6 +15,8 @@ import A from './contextComponent/a';
 
 import {UserProvider} from "./contextComponent/context";
 import HttpRequestComp from "./httpComponent/httpRequest"
+import UseStateComp from './useStateComponent/useStateComp';
+import ItemsUseState from './useStateComponent/itemsUseState';
 
 function App() {
   let obj={
@@ -53,7 +55,12 @@ function App() {
         </UserProvider> */}
 
         {/* http reqeust */}
-        <HttpRequestComp></HttpRequestComp>
+        {/* <HttpRequestComp></HttpRequestComp> */}
+
+        {/* useState in function component */}
+        {/* <UseStateComp /> */}
+
+        <ItemsUseState />
 
       </header>
     </div>
